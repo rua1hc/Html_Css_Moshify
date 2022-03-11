@@ -260,8 +260,8 @@ a {
 /* Cards */
 .card {
     border-radius: 10px;
-    border: 2px solid gray;
-    box-shadow: 0 0 20px 10px;
+    border: 2px solid blue;
+    box-shadow: 0 0 20px 5px yellowgreen;
     overflow: hidden;
 }
 
@@ -335,4 +335,18 @@ a {
     .plan__description {
         font-size: 1.7rem;
     }
+}
+
+/* Media */
+.media {
+    display: flex;
+}
+.media__image {
+    margin-top: 1rem;
+}
+.media__body {
+    margin: 0 1rem;
+}
+.media__title {
+    margin-top: 0;
 }
