@@ -517,9 +517,9 @@ a {
 .collapsible__content {
     /* display: none; 1st way - cannot transition*/
     max-height: 0;
-    overflow: hidden;
     opacity: 0;
-    transition: all 0.5s;
+    overflow: hidden;
+    transition: all 0.2s;
 }
 
 .collapsible--expanded .collapsible__chevron {
@@ -529,7 +529,7 @@ a {
     /* display: block; */
     max-height: 100vh;
     opacity: 1;
-    transition: all 1s;
+    /* transition: all 1s; */
 }
 
 /* Blocks */
@@ -561,4 +561,62 @@ a {
 .block--skewed--right {
     padding-bottom: calc(var(--padding-vertical)+4rem);
     clip-path: polygon(0% 0%, 108% 0%, 108% 80%, 0% 100%);
+}
+
+/* NavBar */
+.nav {
+    background: #000;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+
+    padding: 1rem;
+}
+
+.nav__brand {
+    /* padding-top: 1rem; */
+    transform: translateY(5px);
+}
+
+.nav__toggler {
+    margin-right: 1rem;
+    opacity: 0.5;
+    cursor: pointer;
+    transition: opacity 1s;
+}
+.collapsible--expanded .nav__toggler {
+    opacity: 1;
+    box-shadow: 0 0 0 3px;
+    border-radius: 5px;
+}
+
+.nav__list {
+    width: 100%;
+    margin: 0;
+}
+.nav__items {
+    padding: 0.5rem 2rem;
+    border-bottom: 1px solid #333;
+}
+.nav__items > a {
+    color: #d2d0db;
+}
+.nav__items > a:hover {
+    color: #978bcc;
+}
+
+@media screen and (min-width: 768px) {
+    .nav__toggler {
+        display: none;
+    }
+    .nav__list {
+        display: flex;
+        width: auto;
+        max-height: 100%;
+        opacity: 1;
+    }
+    .nav__items {
+        border: 0;
+    }
 }
