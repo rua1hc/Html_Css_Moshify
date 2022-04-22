@@ -195,7 +195,7 @@ a {
     font-weight: 600;
     margin: 0.5rem 0;
     outline: 0;
-    padding: 2rem 3rem;
+    padding: 2rem 5vw;
     text-align: center;
     text-transform: uppercase;
     white-space: nowrap;
@@ -278,6 +278,7 @@ a {
     border: 0;
     flex-grow: 1;
     padding: 1rem 2rem;
+    width: 0;
 }
 
 .input-group .btn {
@@ -695,7 +696,7 @@ a {
 .block-domain__prices {
     display: grid;
     /* grid-template: repeat(2, 5rem) / repeat(3, 1fr); */
-    grid-template: repeat(3, 5rem) / repeat(3, 1fr);
+    grid-template: repeat(3, 5rem) / repeat(2, 1fr);
 
     justify-items: center;
     align-items: center;
