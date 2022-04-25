@@ -298,8 +298,9 @@ a {
 /* Cards */
 .card {
     border-radius: 10px;
-    border: 2px solid blue;
-    box-shadow: 0 0 20px 5px yellowgreen;
+    /* border: 2px solid blue; */
+    border: 0;
+    box-shadow: 0 0 5rem 1px rgb(223, 219, 219);
     overflow: hidden;
 }
 
@@ -505,6 +506,8 @@ a {
     padding: 4rem;
     /* height: 50rem; */
     border-radius: 1rem;
+    position: relative;
+    top: 5rem;
 }
 .callout--primary {
     color: #fff;
@@ -572,7 +575,7 @@ a {
     --padding-vertical: 6rem;
     padding: var(--padding-vertical) 2rem;
 
-    border: 2px solid red;
+    /* border: 2px solid red; */
 }
 .block__header {
     text-align: center;
